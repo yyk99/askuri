@@ -1,0 +1,154 @@
+<!-- START search form -->
+<form name="f1" method="GET">
+<table>
+<tr>
+<td>In name:<TD><input type="text" name="name" value="<TMPL_VAR NAME=F1_NAME>" >
+&nbsp;Author:&nbsp;<input type="text" name="author" size="30" value="<TMPL_VAR NAME=F1_AUTHOR>" >
+&nbsp;Issue:&nbsp;<input type="text" name="issue" size="10" value="<TMPL_VAR NAME=F1_ISSUE>" >
+</td>
+</tr>
+<tr>
+<td>RCM Cat:<TD>
+<!-- 
+<input type="text" name="category" size="10" value="<TMPL_VAR NAME=F1_CATEGORY>" >&nbsp;
+-->
+	<select name="category" style="width:140px">
+	<option value="0"  <TMPL_VAR NAME=F1_CATEGORY_0> >All Categories</option>
+	<option value="1" <TMPL_VAR NAME=F1_CATEGORY_1> >SPORT</option>
+	<option value="2" <TMPL_VAR NAME=F1_CATEGORY_2> >SCALE</option>
+	<option value="3" <TMPL_VAR NAME=F1_CATEGORY_3> >DUCTED FUN</option>
+	<option value="4" <TMPL_VAR NAME=F1_CATEGORY_4> >ELECTRIC POWER</option>
+	<option value="5" <TMPL_VAR NAME=F1_CATEGORY_5> >SAILPLANE</option>
+	<option value="6" <TMPL_VAR NAME=F1_CATEGORY_6> >GIANT SCALE</option>
+	<option value="7" <TMPL_VAR NAME=F1_CATEGORY_7> >SEAPLANE</option>
+	<option value="8" <TMPL_VAR NAME=F1_CATEGORY_8> >PATTERN</option>
+	<option value="9" <TMPL_VAR NAME=F1_CATEGORY_9> >POWERBOAT</option>
+	<option value="10" <TMPL_VAR NAME=F1_CATEGORY_10> >SAILBOAT</option>
+	<option value="11" <TMPL_VAR NAME=F1_CATEGORY_11> >MISCELANIOUS</option>
+	</select>
+
+	<span class="smallText">RCU Cat:</span>&nbsp;
+	<select name="cat_set" style="width:140px">
+	<TMPL_LOOP F1_CAT_SET_LOOP>
+	<option value="<TMPL_VAR NAME=VAL>" <TMPL_VAR NAME=SEL> ><TMPL_VAR NAME=TXT></option>
+	</TMPL_LOOP>
+	</select>
+</td>
+</tr>
+<tr>
+<td>Engine:<TD><input type="text" name="engine" size="4" value="<TMPL_VAR NAME=F1_ENGINE>" > Motor: <input type="text" name="motor" size="20" value="<TMPL_VAR NAME=F1_MOTOR>"></td>
+</tr>
+<tr>
+<td>
+	Plan ID:<TD><input type="text" name="plan_id" size="10" value="<TMPL_VAR NAME=F1_PLAN_ID>" >&nbsp;
+	Price between <input type="text" size="5" name="lp" value="<TMPL_VAR NAME=F1_LP>">
+	&nbsp;and&nbsp;<input type="text" size="5" name="up" value="<TMPL_VAR NAME=F1_UP>">
+	&nbsp;<input type="button" value="Reset Price" onClick="f1.lp.value='';f1.up.value=''">
+</td>
+</tr>
+<tr>
+<td>Results per page:<td><input type="text" size=2 name="cnt" value="<TMPL_VAR NAME=F1_CNT>">&nbsp;
+Rev.Order.:&nbsp;<input type="checkbox" name="rev_order" <TMPL_VAR NAME=F1_REV_ORDER>>&nbsp;
+<input type="button" value="Clear" onClick="f1.name.value='';category.value='';plan_id.value='';author.value='';category.value='';motor.value='';engine.value='';cat_set.value='';lp.value='';up.value=''">&nbsp;
+<input type="submit" name="action" value="Search"></TD>
+</tr>
+</table>
+<input type="hidden" name="page" value="<TMPL_VAR NAME=F1_PAGE>">
+</form>
+<!-- END search form -->
+<FORM name="f2" method="GET">
+<!-- START navigation bar -->
+<TABLE width="100%">
+<TR>
+<TD align="right" width="50%">
+<TMPL_IF PREV>
+<A href="<TMPL_VAR PREV>">Prev</A>
+<TMPL_ELSE>
+&nbsp;
+</TMPL_IF PREV>
+</TD>
+<TD>
+<INPUT type="submit" name="action" value="Update">
+</TD>
+<TD align="left" width="50%">
+<TMPL_IF NEXT>
+<A href="<TMPL_VAR NEXT>">Next</A>
+</TMPL_IF NEXT>
+</TD>
+</TR>
+</TABLE>
+<!-- END navigation bar -->
+<TABLE width="100%">
+<TMPL_LOOP NAME=TABLE>
+<TR>
+<TD valign="top">
+<IMG src="<TMPL_VAR NAME=IMAGE>" border="1" width="<TMPL_VAR NAME=IMAGE_WIDTH>" height="<TMPL_VAR NAME=IMAGE_HEIGHT>" alt="<TMPL_VAR NAME=NAME> by <TMPL_VAR NAME=AUTHOR>" title="<TMPL_VAR NAME=NAME> by <TMPL_VAR NAME=AUTHOR>" >
+</TD>
+<TD valign="top">
+	<TABLE border="0">
+	<TR><TD><TMPL_VAR NAME=ID></TD>
+	<TR><TD>
+	      <INPUT TYPE="hidden" name="IDS" value="<TMPL_VAR NAME=ID>">
+              <TMPL_VAR NAME=NAME>, by <input type="text" name="F2_AUTHOR" value="<TMPL_VAR NAME=AUTHOR>"></TD>
+	<TR><TD><SPAN title="<TMPL_VAR NAME=CATEGORY_TEXT>" style="color: blue">Cat.: <TMPL_VAR NAME=CATEGORY></SPAN>, Issue: <TMPL_VAR NAME=ISSUE></TD>
+	<TR><TD>Cat.: <TMPL_VAR NAME=CATEGORY_TEXT></TD>
+	<TR><TD><B><TMPL_VAR NAME=INFO></B></TD>
+	<TR><TD><TMPL_VAR NAME=NOTE></TD>
+	<TR><TD><TMPL_VAR NAME=PRICE></TD>
+	<TR><TD>
+	    <TMPL_LOOP NAME=CATS>
+	        <TMPL_VAR NAME=CAT_DESC>
+		<INPUT TYPE="checkbox" name="<TMPL_VAR NAME=NAME>" <TMPL_VAR NAME=CHECK> value="<TMPL_VAR NAME=VALUE>">
+		<TMPL_VAR NAME=DELIM>
+	    </TMPL_LOOP NAME=CATS>
+	    </TD>
+	</TR>
+	<TR>
+	<TD valign="center">
+	Engine: <INPUT TYPE="text" size="4" name="E_LOW" value="<TMPL_VAR NAME=E_LOW>">
+	<INPUT TYPE="text" size="4" name="E_UP" value="<TMPL_VAR NAME=E_UP>">
+	(4st): <INPUT TYPE="text" size="4" name="E4_LOW" value="<TMPL_VAR NAME=E4_LOW>">
+	<INPUT TYPE="text" size="4" name="E4_UP" value="<TMPL_VAR NAME=E4_UP>"><BR>
+	Motor: <INPUT TYPE="text" size="50" maxlength="255" name="MOTOR_INFO" value="<TMPL_VAR NAME=MOTOR_INFO>">
+	</TD>
+	</TR>
+	</TABLE>
+</TD>
+</TR>
+</TMPL_LOOP>
+</TABLE>
+<input type="hidden" name="cnt" value="<TMPL_VAR NAME=F1_CNT>">
+<input type="hidden" name="plan_id" value="<TMPL_VAR NAME=F1_PLAN_ID>">
+<input type="hidden" name="page" value="<TMPL_VAR NAME=F1_PAGE>">
+<input type="hidden" name="category" value="<TMPL_VAR NAME=F1_CATEGORY>">
+<input type="hidden" name="rev_order" value="<TMPL_VAR NAME=F1_REV_ORDER>">
+<input type="hidden" name="author" value="<TMPL_VAR NAME=F1_AUTHOR>">
+<input type="hidden" name="issue" value="<TMPL_VAR NAME=F1_ISSUE>">
+<input type="hidden" name="engine" value="<TMPL_VAR NAME=F1_ENGINE>">
+<input type="hidden" name="motor" value="<TMPL_VAR NAME=F1_MOTOR>">
+<input type="hidden" name="cat_set" value="<TMPL_VAR NAME=F1_CAT_SET>">
+<input type="hidden" name="name" value="<TMPL_VAR NAME=F1_NAME>">
+<input type="hidden" name="lp" value="<TMPL_VAR NAME=F1_LP>">
+<input type="hidden" name="up" value="<TMPL_VAR NAME=F1_UP>">
+<!-- navigation bar -->
+<TABLE width="100%">
+<TR>
+<TD align="right" width="50%">
+<TMPL_IF PREV>
+<A href="<TMPL_VAR PREV>">&lt;&lt;</A>
+<TMPL_ELSE>
+&nbsp;
+</TMPL_IF PREV>
+</TD>
+<TD>
+<INPUT type="submit" name="action" value="Update">
+</TD>
+<TD align="left" width="50%">
+<TMPL_IF NEXT>
+<A href="<TMPL_VAR NEXT>">&gt;&gt;</A>
+</TMPL_IF NEXT>
+</TD>
+</TR>
+</TABLE>
+<!-- navigation bar -->
+</FORM> <!-- form name=f2 -->

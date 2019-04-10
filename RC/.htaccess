@@ -1,0 +1,7 @@
+AddType text/html .shtml
+AddHandler server-parsed .shtml .htm
+Options +Includes
+CookieTracking on
+CookieName askuri_RC
+CookieStyle Cookie2
+CookieExpires 31536000

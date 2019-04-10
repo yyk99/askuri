@@ -1,0 +1,5 @@
+Options -Indexes
+CookieTracking on
+CookieName askuri_RCM
+CookieStyle Cookie2
+CookieExpires 31536000

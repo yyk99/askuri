@@ -1,0 +1,78 @@
+<!-- START search form -->
+<form name="f1" method="GET">
+<table>
+<tr>
+<td>In name:<TD><input type="text" name="name" value="<TMPL_VAR NAME=F1_NAME>" ></td>
+</tr>
+<tr>
+<td>Category:<TD><input type="text" name="category" value="<TMPL_VAR NAME=F1_CATEGORY>" ></td>
+</tr>
+<tr>
+<td>Plan ID:<TD><input type="text" name="plan_id" size="10" value="<TMPL_VAR NAME=F1_PLAN_ID>" ></td>
+</tr>
+<tr>
+<td>Results per page:<TD><input type="text" size=2 name="cnt" value="<TMPL_VAR NAME=F1_CNT>"></td>
+</tr>
+<tr>
+<td>Rev.Order.:<TD><input type="checkbox" name="rev_order" <TMPL_VAR NAME=F1_REV_ORDER>></td>
+</tr>
+<tr>
+<TD><input type="button" value="Clear" onClick="f1.name.value='';category.value='';plan_id.value='';"><td><input type="submit" name="action" value="Search">
+</tr>
+</table>
+<input type="hidden" name="page" value="<TMPL_VAR NAME=F1_PAGE>">
+Price between <input type="text" name="lp" value="<TMPL_VAR NAME=F1_LP>"> and 
+<input type="text" name="up" value="<TMPL_VAR NAME=F1_UP>">
+</form>
+<!-- END search form -->
+<!-- START navigation bar -->
+<TABLE width="100%">
+<TR>
+<TD align="left">
+<TMPL_IF PREV>
+<A href="<TMPL_VAR PREV>">Prev</A>
+</TMPL_IF PREV>
+</TD>
+<TD align="right">
+<TMPL_IF NEXT>
+<A href="<TMPL_VAR NEXT>">Next</A>
+</TMPL_IF NEXT>
+</TD>
+</TR>
+</TABLE>
+<!-- END navigation bar -->
+<TABLE width="100%">
+<TMPL_LOOP NAME=TABLE>
+<TR>
+<TD valign="top">
+<IMG src="<TMPL_VAR NAME=IMAGE>" border="1">
+</TD>
+<TD valign="top">
+	<TABLE border="0">
+	<TR><TD><TMPL_VAR NAME=ID></TD>
+	<TR><TD><TMPL_VAR NAME=NAME>, <TMPL_VAR NAME=AUTHOR></TD>
+	<TR><TD>Cat.: <TMPL_VAR NAME=CATEGORY>, Issue: <TMPL_VAR NAME=ISSUE></TD>
+	<TR><TD><TMPL_VAR NAME=INFO></TD>
+	<TR><TD><TMPL_VAR NAME=NOTE></TD>
+	<TR><TD><TMPL_VAR NAME=PRICE></TD>
+	</TABLE>
+</TD>
+</TR>
+</TMPL_LOOP>
+</TABLE>
+<!-- navigation bar -->
+<TABLE width="100%">
+<TR>
+<TD align="left">
+<TMPL_IF PREV>
+<A href="<TMPL_VAR PREV>">Prev</A>
+</TMPL_IF PREV>
+</TD>
+<TD align="right">
+<TMPL_IF NEXT>
+<A href="<TMPL_VAR NEXT>">Next</A>
+</TMPL_IF NEXT>
+</TD>
+</TR>
+</TABLE>
+<!-- navigation bar -->

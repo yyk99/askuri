@@ -1,0 +1,4 @@
+AddLanguage ru .ru
+AddCharset KOI8-R .ru
+AddCharset KOI8-R .koi8-r
+DirectoryIndex index.html index.ru.html

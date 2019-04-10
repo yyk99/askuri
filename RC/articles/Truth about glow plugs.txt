@@ -1,0 +1,45 @@
+From: tlrascal@my-deja.com
+Subject: Truth about glow plugs
+Date: 2000/06/16
+Message-ID: <8ie9so$drs$1@nnrp1.deja.com>#1/1
+X-Http-Proxy: 1.0 x52.deja.com:80 (Squid/1.1.22) for client 205.188.193.52
+Organization: Deja.com - Before you buy.
+X-Article-Creation-Date: Fri Jun 16 22:31:52 2000 GMT
+X-MyDeja-Info: XMYDJUIDtlrascal
+Newsgroups: rec.models.rc.air
+X-Http-User-Agent: Mozilla/4.0 (compatible; MSIE 5.0; AOL 5.0; Windows 98; DigExt)
+
+
+I have seen several discussions about glow plugs.  One was in response
+to MDS problems on break in.  Others have been about poor performance
+related to various engines.  Here is my opinion based on 50 years
+experience and degrees in Chemistry and Chemical engineering.
+The most popular material for glow elements is a platinum iridium and
+nichrome material.  Please note that platinum and iridium are expensive
+materials so it is not by whim they are used.  The purpose of a glow
+plug is to act as a catalyst for a chemical reaction, burning of the
+fuel.  This is accomplished by a combination of catalytic action,
+cylinder temperature and compression ignition along with the
+composition of the fuel.  Platinum and iridium are used because of
+their physical properties but most important because the are sources of
+free electrons.  When an engine is new there will be a transfer of fine
+metal particles microspic in size and these tend to contaminate the
+element.  You can tell by removing the plug and looking for a frosty
+appearance of the element rather than bright and shiny.  You can bet
+for the first few runs it won't take long for this element to get that
+frosty look.  The best thing to do is break in on a test stand and use
+an inexpensive or old plug for the first 4 or 5 tanks.  Run at full
+throttle floowing the prescribed break in for your type of engine.  I
+will not go into ABC versus ringed etc in this discussion.  After time
+and it will vary from engine to engine you should be able to get a good
+steady run at the correct needle setting and the glow plug should be
+refreshed and will take several runs before it gets this frosted
+appearance.  Just because a plug glows does not mean it is good.  Check
+the appearance of the element to make sure it is bright and shiny and
+is not grossly distorted.  It is the catalytic action that is important
+and the surface free electrons make this possible.  A contaminated
+element will not allow for the proper catalytic action.  Check your
+plugs often.
+
+
+Sent via Deja.com http://www.deja.com/

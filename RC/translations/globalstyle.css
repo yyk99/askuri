@@ -1,0 +1,39 @@
+a:link.leftnav {  color: #FFFFFF; text-decoration: none}
+a:visited.leftnav {  color: #CCCCCC; text-decoration: none}
+a:active.leftnav {  color: #FFFF99; text-decoration: underline}
+a:hover.leftnav {  color: #FFFF99; text-decoration: underline}
+
+a:link.white {  color: #333399; text-decoration: underline;}
+a:visited.white {  color: #666666; text-decoration: underline;}
+a:active.white {  color: #3300FF; text-decoration: underline;}
+a:hover.white {  color: #FF3300; text-decoration: underline;}
+
+a:link.white2 {  color: #333399; text-decoration: none;}
+a:visited.white2 {  color: #666666; text-decoration: none;}
+a:active.white2 {  color: #3300FF; text-decoration: underline}
+a:hover.white2 {  color: #FF3300; text-decoration: underline}
+
+.scrollbar {
+scrollbar-base-color: #CCCCCC;
+scrollbar-face-color: #CCCCCC;
+scrollbar-shadow-color:#666666;
+scrollbar-highlight-color: White;
+scrollbar-3dlight-color:#999999;
+scrollbar-darkshadow-color: #003333;
+scrollbar-track-color: #336699;
+scrollbar-arrow-color: #333366;
+}
+
+.search {
+	background:#CCCCCC;
+	font-family: verdana, "Lucida Sans Typewriter", helvetica;
+	font-size: 10px;
+}
+
+.jumpmenu {
+	background:#336699;
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}

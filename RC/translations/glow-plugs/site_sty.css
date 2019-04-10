@@ -1,0 +1,51 @@
+a:link.bred {  color: #ff0000; text-decoration: none}
+a:visited.bred {  color: #ff0000; text-decoration: none}
+a:active.bred {  color: #ff0000; text-decoration: underline}
+a:hover.bred {  color: #FF0000; text-decoration: underline}
+
+a:link.gold {  color: #ffcc00; text-decoration: none}
+a:visited.gold {  color: #FFFFCC; text-decoration: none}
+a:active.gold {  color: #ffffff; text-decoration: underline}
+a:hover.gold {  color: #ffcc00; text-decoration: underline}
+
+a:link.grey {  color: #737373; text-decoration: none}
+a:visited.grey {  color: #999999; text-decoration: none}
+a:active.grey {  color: #737373; text-decoration: underline}
+a:hover.grey {  color: #737373; text-decoration: underline}
+
+a:link.red {  color: #ff0000; text-decoration: none}
+a:visited.red {  color: #ff0000; text-decoration: none}
+a:active.red {  color: #ff0000; text-decoration: underline}
+a:hover.red {  color: #FF0000; text-decoration: underline}
+
+a:link.default {  color: #0066CC; text-decoration: underline}
+a:visited.default {  color: #666666; text-decoration: underline}
+a:active.default {  color: #CC0000; text-decoration: underline}
+a:hover.default {  color: #FF3300; text-decoration: underline}
+
+a:link.white {  color: #FFFFFF; text-decoration: none}
+a:visited.white {  color: #FFFFFF; text-decoration: none}
+a:active.white {  color: #FF0000; text-decoration: underline}
+a:hover.white {  color: #FFFFFF; text-decoration: underline}
+
+a:link.white1 {  color: #0066CC; text-decoration: none}
+a:visited.white1 {  color: #666666; text-decoration: none}
+a:active.white1 {  color: #FF3300; text-decoration: underline}
+a:hover.white1 {  color: #FF3300; text-decoration: underline}
+
+a:link.white2 {  color: #FFFFFF; text-decoration: none}
+a:visited.white2 {  color: #999999; text-decoration: none}
+a:active.white2 {  color: #FFCC33; text-decoration: underline}
+a:hover.white2 {  color: #FFCC33; text-decoration: underline}
+
+a:link.white3 {  color: #FFFFFF; text-decoration: none}
+a:visited.white3 {  color: #FFFFFF; text-decoration: none}
+a:active.white3 {  color: #FFFF00; text-decoration: underline}
+a:hover.white3 {  color: #FFFF00; text-decoration: underline}
+
+a:link.blue {  color: blue; text-decoration: none}
+a:visited.blue {  color: blue; text-decoration: none}
+a:active.blue {  color: blue; text-decoration: underline}
+a:hover.blue {  color: blue; text-decoration: underline}
+
+.bodytext {font-size: 10pt; color: #000000; text-decoration: none;font-family: 'Arial','Verdana',Arial,SANS-SERIF}
